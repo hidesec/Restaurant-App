@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell2" id="gTV-IL-0wX" customClass="CustomCell2" customModule="Restaurant_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="499"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="496" height="499"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wsR-hA-xrL">
+                        <rect key="frame" x="198" y="149.5" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="5Bb-rQ-4xB"/>
+                            <constraint firstAttribute="width" constant="100" id="Ybk-uO-bsp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDn-n7-Ub3">
+                        <rect key="frame" x="20" y="277.5" width="456" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="kFs-Gt-Yao"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddK-Wt-Xsb">
+                        <rect key="frame" x="30" y="387.5" width="436" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Zol-Ul-MD7"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LDn-n7-Ub3" secondAttribute="trailing" constant="20" id="4tt-y9-XOk"/>
+                <constraint firstItem="wsR-hA-xrL" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-50" id="6mt-XC-uc7"/>
+                <constraint firstItem="LDn-n7-Ub3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="F2g-6W-vKv"/>
+                <constraint firstItem="wsR-hA-xrL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="PIH-9L-igu"/>
+                <constraint firstAttribute="trailing" secondItem="ddK-Wt-Xsb" secondAttribute="trailing" constant="30" id="YgE-0p-VlG"/>
+                <constraint firstItem="ddK-Wt-Xsb" firstAttribute="top" secondItem="LDn-n7-Ub3" secondAttribute="bottom" constant="60" id="bLn-22-DMT"/>
+                <constraint firstItem="LDn-n7-Ub3" firstAttribute="top" secondItem="wsR-hA-xrL" secondAttribute="bottom" constant="28" id="n4c-gB-zHu"/>
+                <constraint firstItem="ddK-Wt-Xsb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="qvd-nN-dZw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="496" height="499"/>
+            <connections>
+                <outlet property="buttonCell" destination="ddK-Wt-Xsb" id="kkH-Hn-Uw2"/>
+                <outlet property="imagesCell" destination="wsR-hA-xrL" id="fDR-6X-AkN"/>
+                <outlet property="titleCell" destination="LDn-n7-Ub3" id="QX9-Gw-IBe"/>
+            </connections>
+            <point key="canvasLocation" x="459.4202898550725" y="209.93303571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
